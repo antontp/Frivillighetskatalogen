@@ -32,6 +32,7 @@ function getAge(string) {
 //     birthdate: '1989-11-24T16:12:54.000Z',
 //     email: 'michael16@hotmail.com',
 //     password: lqjkwendjasnd
+//     tags: ["kokk", "leirsjef", "praktisk"]
 //   }
 
 function Row(leader) {
@@ -42,9 +43,18 @@ function Row(leader) {
         <>
             <TableRow onClick={() => setOpen(!open)}>
                 <TableCell>{row.name}</TableCell>
+                <TableCell>24</TableCell>
                 <TableCell>OSLO</TableCell>
-                <TableCell>Kokk - Praktisk - Leirsjef - Musikk - Brann - Førstehjep</TableCell>
             </TableRow>
+            <TableRow>
+                    <TableCell colSpan={4}>
+                        <div style={{display: "flex", gap: "1rem"}}>
+                            {row.accounts.map((account, idx) => 
+                                <p key={idx}>{account}</p>
+                            )}
+                        </div>
+                    </TableCell>
+                </TableRow>
             <TableRow>
                 <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={3}>
                     <Collapse in={open} timeout="auto" unmountOnExit>
@@ -79,8 +89,8 @@ function LeaderBoard({ leaders }) {
                     <TableRow>
                         {/* inner data: sex */}
                         <TableCell>Full name</TableCell>
+                        <TableCell>Age</TableCell>
                         <TableCell>District</TableCell>
-                        <TableCell>Experience / Wishes</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
