@@ -1,4 +1,4 @@
-import LeaderBoard from "@/components/LeaderBoard/LeaderBoard";
+import LeaderBoard from "@/globalComponents/LeaderBoard/LeaderBoard";
 import clientPromise from "@/lib/mongodb";
 
 export default async function Home() {
