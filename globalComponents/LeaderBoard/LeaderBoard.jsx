@@ -28,11 +28,10 @@ function getAge(string) {
 //     _id: '5ca4bbcea2dd94ee58162a73',
 //     username: 'thomasdavid',
 //     name: 'Ashley Lopez',
-//     address: '18637 Jessica Ridge Apt. 157\nGrossberg, ME 84127',
+//     district: '18637 Jessica Ridge Apt. 157\nGrossberg, ME 84127',
 //     birthdate: '1989-11-24T16:12:54.000Z',
 //     email: 'michael16@hotmail.com',
-//     accounts: [ 662207, 816481 ],
-//     tier_and_details: {}
+//     password: lqjkwendjasnd
 //   }
 
 function Row(leader) {
